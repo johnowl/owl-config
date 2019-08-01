@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.RestController
 import org.springframework.core.env.EnumerablePropertySource
 import org.springframework.core.env.ConfigurableEnvironment
 import org.springframework.core.env.Environment
-import java.util.HashMap
-
 
 @RestController
 class Controller(
@@ -31,7 +29,7 @@ class Controller(
 
         val regex = """^feature\.[a-zA-Z0-9_-]+\.enabled$""".toRegex()
 
-        val properties = HashMap<String, String>()
+        val properties = mutableMapOf<String, String>()
         if (env is ConfigurableEnvironment) {
             for (propertySource in (env as ConfigurableEnvironment).propertySources) {
                 if (propertySource is EnumerablePropertySource<*>) {
