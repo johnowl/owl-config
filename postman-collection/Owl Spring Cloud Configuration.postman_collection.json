@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "5a0cbd72-02fa-461f-b635-a6b51c81fa2b",
+		"name": "Spring Cloud Configuration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[Server] Read Configurations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/owl-config-client-retrofit/default",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"owl-config-client-retrofit",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Server] Read Toggles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/feature-toggles/default",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"feature-toggles",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Client] Read One Toggle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/feature-one-is-enabled",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"feature-one-is-enabled"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Client] Read Owl Toggles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/all-toggles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"all-toggles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Client] Read Configuration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5001/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"config"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
