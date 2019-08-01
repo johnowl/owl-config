@@ -29,7 +29,7 @@ class Controller(
     @GetMapping("/all-toggles")
     fun getAllToggles(): Map<String, String> {
 
-        val regex = """^feature.[a-zA-Z0-9_-]+.enabled$""".toRegex()
+        val regex = """^feature\.[a-zA-Z0-9_-]+\.enabled$""".toRegex()
 
         val properties = HashMap<String, String>()
         if (env is ConfigurableEnvironment) {
