@@ -1,0 +1,10 @@
+server:
+  port: 5001
+spring:
+  application:
+    name: owl-config-client-retrofit
+  cloud:
+    config:
+      name: owl-config-client-retrofit, feature-toggles
+      uri: http://localhost:5000
+      fail-fast: true

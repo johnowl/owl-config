@@ -1,0 +1,7 @@
+feature:
+  my_feature_one:
+    enabled: true
+    rules:
+  my_feature_two:
+    enabled: true
+    rules: "Number(version) > 5"
